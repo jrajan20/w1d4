@@ -5,8 +5,8 @@ var input = [
 ];
 var result = input.map(function(numbers)
 {
-	var zSquare = Math.pow(numbers.x,2) + Math.pow(numbers.y,2);
-	return Math.sqrt(zSquare);
+	
+	return Math.sqrt(Math.pow(numbers.x,2) + Math.pow(numbers.y,2));
 });
 
 console.log(result[0] === 5);
