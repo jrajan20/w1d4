@@ -19,7 +19,7 @@ function fakeMap (foods, map)
 	{
 		foods.splice(i,1,map(foods[i]));
 	}
-	return
+	return foods;
 }
 function foodLength(food)
 {
@@ -42,8 +42,10 @@ function illegal(food)
 }
 
 
-fakeMap(foods,foodUpper);
-console.log(foods)
+
+console.log(fakeMap(foods,foodUpper));
+
+
 
 
 
