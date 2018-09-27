@@ -13,6 +13,10 @@ function makeLoadedDie() {
   		{
   			rollCount += 1;
   		}
+  		else
+  		{
+  			rollCount = 0;
+  		}
   	
   		return fakeRoll;
   	}
@@ -24,11 +28,4 @@ var rollLoadedDie = makeLoadedDie();
 
 console.log(rollLoadedDie());  // 5
 console.log(rollLoadedDie());  // 4
-console.log(rollLoadedDie());  // 
-console.log(rollLoadedDie());
-console.log(rollLoadedDie());
-console.log(rollLoadedDie());
-console.log(rollLoadedDie());
-console.log(rollLoadedDie());
-console.log(rollLoadedDie());
-console.log(rollLoadedDie());
+console.log(rollLoadedDie());  // 6
